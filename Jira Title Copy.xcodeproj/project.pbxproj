@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52ACB99625652FD700B28166 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ACB99525652FD700B28166 /* AppDelegate.swift */; };
+		52ACB99925652FD700B28166 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52ACB99725652FD700B28166 /* Main.storyboard */; };
+		52ACB99B25652FD700B28166 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ACB99A25652FD700B28166 /* ViewController.swift */; };
+		52ACB99D25652FD900B28166 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52ACB99C25652FD900B28166 /* Assets.xcassets */; };
+		52ACB9A825652FD900B28166 /* Jira_Title_CopyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ACB9A725652FD900B28166 /* Jira_Title_CopyTests.swift */; };
+		52ACB9B325652FD900B28166 /* Jira_Title_CopyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ACB9B225652FD900B28166 /* Jira_Title_CopyUITests.swift */; };
+		52ACB9BA25652FD900B28166 /* Jira Title Copy Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 52ACB9B925652FD900B28166 /* Jira Title Copy Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		52ACB9BF25652FD900B28166 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52ACB9BE25652FD900B28166 /* Cocoa.framework */; };
+		52ACB9C225652FD900B28166 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ACB9C125652FD900B28166 /* SafariWebExtensionHandler.swift */; };
+		52ACB9C525652FD900B28166 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 52ACB9C425652FD900B28166 /* _locales */; };
+		52ACB9C725652FD900B28166 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 52ACB9C625652FD900B28166 /* images */; };
+		52ACB9C925652FD900B28166 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 52ACB9C825652FD900B28166 /* manifest.json */; };
+		52ACB9CB25652FD900B28166 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 52ACB9CA25652FD900B28166 /* background.js */; };
+		52ACB9CD25652FD900B28166 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 52ACB9CC25652FD900B28166 /* content.js */; };
+		52ACB9CF25652FD900B28166 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 52ACB9CE25652FD900B28166 /* popup.html */; };
+		52ACB9D125652FD900B28166 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 52ACB9D025652FD900B28166 /* popup.css */; };
+		52ACB9D325652FD900B28166 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 52ACB9D225652FD900B28166 /* popup.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52ACB9A425652FD900B28166 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52ACB98925652FD700B28166 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52ACB99025652FD700B28166;
+			remoteInfo = "Jira Title Copy";
+		};
+		52ACB9AF25652FD900B28166 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52ACB98925652FD700B28166 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52ACB99025652FD700B28166;
+			remoteInfo = "Jira Title Copy";
+		};
+		52ACB9BB25652FD900B28166 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52ACB98925652FD700B28166 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52ACB9B825652FD900B28166;
+			remoteInfo = "Jira Title Copy Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		52ACB9DB25652FD900B28166 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				52ACB9BA25652FD900B28166 /* Jira Title Copy Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		52ACB99125652FD700B28166 /* Jira Title Copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jira Title Copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52ACB99425652FD700B28166 /* Jira_Title_Copy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Jira_Title_Copy.entitlements; sourceTree = "<group>"; };
+		52ACB99525652FD700B28166 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52ACB99825652FD700B28166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52ACB99A25652FD700B28166 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52ACB99C25652FD900B28166 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52ACB99E25652FD900B28166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52ACB9A325652FD900B28166 /* Jira Title CopyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jira Title CopyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52ACB9A725652FD900B28166 /* Jira_Title_CopyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jira_Title_CopyTests.swift; sourceTree = "<group>"; };
+		52ACB9A925652FD900B28166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52ACB9AE25652FD900B28166 /* Jira Title CopyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jira Title CopyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52ACB9B225652FD900B28166 /* Jira_Title_CopyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jira_Title_CopyUITests.swift; sourceTree = "<group>"; };
+		52ACB9B425652FD900B28166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52ACB9B925652FD900B28166 /* Jira Title Copy Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Jira Title Copy Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52ACB9BE25652FD900B28166 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		52ACB9C125652FD900B28166 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		52ACB9C425652FD900B28166 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		52ACB9C625652FD900B28166 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		52ACB9C825652FD900B28166 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		52ACB9CA25652FD900B28166 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		52ACB9CC25652FD900B28166 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		52ACB9CE25652FD900B28166 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		52ACB9D025652FD900B28166 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		52ACB9D225652FD900B28166 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		52ACB9D425652FD900B28166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52ACB9D525652FD900B28166 /* Jira_Title_Copy_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Jira_Title_Copy_Extension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52ACB98E25652FD700B28166 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52ACB9A025652FD900B28166 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52ACB9AB25652FD900B28166 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52ACB9B625652FD900B28166 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52ACB9BF25652FD900B28166 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52ACB98825652FD700B28166 = {
+			isa = PBXGroup;
+			children = (
+				52ACB99325652FD700B28166 /* Jira Title Copy */,
+				52ACB9A625652FD900B28166 /* Jira Title CopyTests */,
+				52ACB9B125652FD900B28166 /* Jira Title CopyUITests */,
+				52ACB9C025652FD900B28166 /* Jira Title Copy Extension */,
+				52ACB9BD25652FD900B28166 /* Frameworks */,
+				52ACB99225652FD700B28166 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52ACB99225652FD700B28166 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52ACB99125652FD700B28166 /* Jira Title Copy.app */,
+				52ACB9A325652FD900B28166 /* Jira Title CopyTests.xctest */,
+				52ACB9AE25652FD900B28166 /* Jira Title CopyUITests.xctest */,
+				52ACB9B925652FD900B28166 /* Jira Title Copy Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52ACB99325652FD700B28166 /* Jira Title Copy */ = {
+			isa = PBXGroup;
+			children = (
+				52ACB99425652FD700B28166 /* Jira_Title_Copy.entitlements */,
+				52ACB99525652FD700B28166 /* AppDelegate.swift */,
+				52ACB99725652FD700B28166 /* Main.storyboard */,
+				52ACB99A25652FD700B28166 /* ViewController.swift */,
+				52ACB99C25652FD900B28166 /* Assets.xcassets */,
+				52ACB99E25652FD900B28166 /* Info.plist */,
+			);
+			path = "Jira Title Copy";
+			sourceTree = "<group>";
+		};
+		52ACB9A625652FD900B28166 /* Jira Title CopyTests */ = {
+			isa = PBXGroup;
+			children = (
+				52ACB9A725652FD900B28166 /* Jira_Title_CopyTests.swift */,
+				52ACB9A925652FD900B28166 /* Info.plist */,
+			);
+			path = "Jira Title CopyTests";
+			sourceTree = "<group>";
+		};
+		52ACB9B125652FD900B28166 /* Jira Title CopyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52ACB9B225652FD900B28166 /* Jira_Title_CopyUITests.swift */,
+				52ACB9B425652FD900B28166 /* Info.plist */,
+			);
+			path = "Jira Title CopyUITests";
+			sourceTree = "<group>";
+		};
+		52ACB9BD25652FD900B28166 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52ACB9BE25652FD900B28166 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52ACB9C025652FD900B28166 /* Jira Title Copy Extension */ = {
+			isa = PBXGroup;
+			children = (
+				52ACB9C125652FD900B28166 /* SafariWebExtensionHandler.swift */,
+				52ACB9D425652FD900B28166 /* Info.plist */,
+				52ACB9D525652FD900B28166 /* Jira_Title_Copy_Extension.entitlements */,
+				52ACB9C325652FD900B28166 /* Resources */,
+			);
+			path = "Jira Title Copy Extension";
+			sourceTree = "<group>";
+		};
+		52ACB9C325652FD900B28166 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				52ACB9C425652FD900B28166 /* _locales */,
+				52ACB9C625652FD900B28166 /* images */,
+				52ACB9C825652FD900B28166 /* manifest.json */,
+				52ACB9CA25652FD900B28166 /* background.js */,
+				52ACB9CC25652FD900B28166 /* content.js */,
+				52ACB9CE25652FD900B28166 /* popup.html */,
+				52ACB9D025652FD900B28166 /* popup.css */,
+				52ACB9D225652FD900B28166 /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52ACB99025652FD700B28166 /* Jira Title Copy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52ACB9DC25652FD900B28166 /* Build configuration list for PBXNativeTarget "Jira Title Copy" */;
+			buildPhases = (
+				52ACB98D25652FD700B28166 /* Sources */,
+				52ACB98E25652FD700B28166 /* Frameworks */,
+				52ACB98F25652FD700B28166 /* Resources */,
+				52ACB9DB25652FD900B28166 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52ACB9BC25652FD900B28166 /* PBXTargetDependency */,
+			);
+			name = "Jira Title Copy";
+			productName = "Jira Title Copy";
+			productReference = 52ACB99125652FD700B28166 /* Jira Title Copy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52ACB9A225652FD900B28166 /* Jira Title CopyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52ACB9DF25652FD900B28166 /* Build configuration list for PBXNativeTarget "Jira Title CopyTests" */;
+			buildPhases = (
+				52ACB99F25652FD900B28166 /* Sources */,
+				52ACB9A025652FD900B28166 /* Frameworks */,
+				52ACB9A125652FD900B28166 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52ACB9A525652FD900B28166 /* PBXTargetDependency */,
+			);
+			name = "Jira Title CopyTests";
+			productName = "Jira Title CopyTests";
+			productReference = 52ACB9A325652FD900B28166 /* Jira Title CopyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		52ACB9AD25652FD900B28166 /* Jira Title CopyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52ACB9E225652FD900B28166 /* Build configuration list for PBXNativeTarget "Jira Title CopyUITests" */;
+			buildPhases = (
+				52ACB9AA25652FD900B28166 /* Sources */,
+				52ACB9AB25652FD900B28166 /* Frameworks */,
+				52ACB9AC25652FD900B28166 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52ACB9B025652FD900B28166 /* PBXTargetDependency */,
+			);
+			name = "Jira Title CopyUITests";
+			productName = "Jira Title CopyUITests";
+			productReference = 52ACB9AE25652FD900B28166 /* Jira Title CopyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		52ACB9B825652FD900B28166 /* Jira Title Copy Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52ACB9D825652FD900B28166 /* Build configuration list for PBXNativeTarget "Jira Title Copy Extension" */;
+			buildPhases = (
+				52ACB9B525652FD900B28166 /* Sources */,
+				52ACB9B625652FD900B28166 /* Frameworks */,
+				52ACB9B725652FD900B28166 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Jira Title Copy Extension";
+			productName = "Jira Title Copy Extension";
+			productReference = 52ACB9B925652FD900B28166 /* Jira Title Copy Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52ACB98925652FD700B28166 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					52ACB99025652FD700B28166 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					52ACB9A225652FD900B28166 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 52ACB99025652FD700B28166;
+					};
+					52ACB9AD25652FD900B28166 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 52ACB99025652FD700B28166;
+					};
+					52ACB9B825652FD900B28166 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 52ACB98C25652FD700B28166 /* Build configuration list for PBXProject "Jira Title Copy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52ACB98825652FD700B28166;
+			productRefGroup = 52ACB99225652FD700B28166 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52ACB99025652FD700B28166 /* Jira Title Copy */,
+				52ACB9A225652FD900B28166 /* Jira Title CopyTests */,
+				52ACB9AD25652FD900B28166 /* Jira Title CopyUITests */,
+				52ACB9B825652FD900B28166 /* Jira Title Copy Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52ACB98F25652FD700B28166 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52ACB99D25652FD900B28166 /* Assets.xcassets in Resources */,
+				52ACB99925652FD700B28166 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52ACB9A125652FD900B28166 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52ACB9AC25652FD900B28166 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52ACB9B725652FD900B28166 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52ACB9CB25652FD900B28166 /* background.js in Resources */,
+				52ACB9D125652FD900B28166 /* popup.css in Resources */,
+				52ACB9CF25652FD900B28166 /* popup.html in Resources */,
+				52ACB9C725652FD900B28166 /* images in Resources */,
+				52ACB9C925652FD900B28166 /* manifest.json in Resources */,
+				52ACB9C525652FD900B28166 /* _locales in Resources */,
+				52ACB9CD25652FD900B28166 /* content.js in Resources */,
+				52ACB9D325652FD900B28166 /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52ACB98D25652FD700B28166 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52ACB99B25652FD700B28166 /* ViewController.swift in Sources */,
+				52ACB99625652FD700B28166 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52ACB99F25652FD900B28166 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52ACB9A825652FD900B28166 /* Jira_Title_CopyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52ACB9AA25652FD900B28166 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52ACB9B325652FD900B28166 /* Jira_Title_CopyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52ACB9B525652FD900B28166 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52ACB9C225652FD900B28166 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52ACB9A525652FD900B28166 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52ACB99025652FD700B28166 /* Jira Title Copy */;
+			targetProxy = 52ACB9A425652FD900B28166 /* PBXContainerItemProxy */;
+		};
+		52ACB9B025652FD900B28166 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52ACB99025652FD700B28166 /* Jira Title Copy */;
+			targetProxy = 52ACB9AF25652FD900B28166 /* PBXContainerItemProxy */;
+		};
+		52ACB9BC25652FD900B28166 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52ACB9B825652FD900B28166 /* Jira Title Copy Extension */;
+			targetProxy = 52ACB9BB25652FD900B28166 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52ACB99725652FD700B28166 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52ACB99825652FD700B28166 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52ACB9D625652FD900B28166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52ACB9D725652FD900B28166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		52ACB9D925652FD900B28166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Jira Title Copy Extension/Jira_Title_Copy_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VGD4L8JEE3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Jira Title Copy Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ionel71089.Jira-Title-Copy.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		52ACB9DA25652FD900B28166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Jira Title Copy Extension/Jira_Title_Copy_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VGD4L8JEE3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Jira Title Copy Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ionel71089.Jira-Title-Copy.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		52ACB9DD25652FD900B28166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Jira Title Copy/Jira_Title_Copy.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VGD4L8JEE3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Jira Title Copy/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ionel71089.Jira-Title-Copy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		52ACB9DE25652FD900B28166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Jira Title Copy/Jira_Title_Copy.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VGD4L8JEE3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Jira Title Copy/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ionel71089.Jira-Title-Copy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		52ACB9E025652FD900B28166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VGD4L8JEE3;
+				INFOPLIST_FILE = "Jira Title CopyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ionel71089.Jira-Title-CopyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jira Title Copy.app/Contents/MacOS/Jira Title Copy";
+			};
+			name = Debug;
+		};
+		52ACB9E125652FD900B28166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VGD4L8JEE3;
+				INFOPLIST_FILE = "Jira Title CopyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ionel71089.Jira-Title-CopyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jira Title Copy.app/Contents/MacOS/Jira Title Copy";
+			};
+			name = Release;
+		};
+		52ACB9E325652FD900B28166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VGD4L8JEE3;
+				INFOPLIST_FILE = "Jira Title CopyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ionel71089.Jira-Title-CopyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Jira Title Copy";
+			};
+			name = Debug;
+		};
+		52ACB9E425652FD900B28166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VGD4L8JEE3;
+				INFOPLIST_FILE = "Jira Title CopyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ionel71089.Jira-Title-CopyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Jira Title Copy";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52ACB98C25652FD700B28166 /* Build configuration list for PBXProject "Jira Title Copy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52ACB9D625652FD900B28166 /* Debug */,
+				52ACB9D725652FD900B28166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52ACB9D825652FD900B28166 /* Build configuration list for PBXNativeTarget "Jira Title Copy Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52ACB9D925652FD900B28166 /* Debug */,
+				52ACB9DA25652FD900B28166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52ACB9DC25652FD900B28166 /* Build configuration list for PBXNativeTarget "Jira Title Copy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52ACB9DD25652FD900B28166 /* Debug */,
+				52ACB9DE25652FD900B28166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52ACB9DF25652FD900B28166 /* Build configuration list for PBXNativeTarget "Jira Title CopyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52ACB9E025652FD900B28166 /* Debug */,
+				52ACB9E125652FD900B28166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52ACB9E225652FD900B28166 /* Build configuration list for PBXNativeTarget "Jira Title CopyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52ACB9E325652FD900B28166 /* Debug */,
+				52ACB9E425652FD900B28166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52ACB98925652FD700B28166 /* Project object */;
+}
