@@ -24,6 +24,7 @@
 		52ACB9CF25652FD900B28166 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 52ACB9CE25652FD900B28166 /* popup.html */; };
 		52ACB9D125652FD900B28166 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 52ACB9D025652FD900B28166 /* popup.css */; };
 		52ACB9D325652FD900B28166 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 52ACB9D225652FD900B28166 /* popup.js */; };
+		52E8A4BA25B3292F00AA0A60 /* content.css in Resources */ = {isa = PBXBuildFile; fileRef = 52E8A4B925B3292F00AA0A60 /* content.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		52ACB9D225652FD900B28166 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
 		52ACB9D425652FD900B28166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52ACB9D525652FD900B28166 /* Jira_Title_Copy_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Jira_Title_Copy_Extension.entitlements; sourceTree = "<group>"; };
+		52E8A4B925B3292F00AA0A60 /* content.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = content.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 				52ACB9C625652FD900B28166 /* images */,
 				52ACB9C825652FD900B28166 /* manifest.json */,
 				52ACB9CA25652FD900B28166 /* background.js */,
+				52E8A4B925B3292F00AA0A60 /* content.css */,
 				52ACB9CC25652FD900B28166 /* content.js */,
 				52ACB9CE25652FD900B28166 /* popup.html */,
 				52ACB9D025652FD900B28166 /* popup.css */,
@@ -363,6 +366,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52E8A4BA25B3292F00AA0A60 /* content.css in Resources */,
 				52ACB9CB25652FD900B28166 /* background.js in Resources */,
 				52ACB9D125652FD900B28166 /* popup.css in Resources */,
 				52ACB9CF25652FD900B28166 /* popup.html in Resources */,

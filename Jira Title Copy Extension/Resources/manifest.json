@@ -19,8 +19,9 @@
     },
 
     "content_scripts": [{
+        "css": "content.css",
         "js": [ "content.js" ],
-        "matches": [ "*://example.com/*" ]
+        "matches": [ "https://jiracommercial.flir.com/browse/*" ]
     }],
 
     "browser_action": {
