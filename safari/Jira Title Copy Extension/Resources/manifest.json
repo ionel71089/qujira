@@ -19,7 +19,7 @@
     },
 
     "content_scripts": [{
-        "css": "content.css",
+        "css": ["content.css"],
         "js": ["content.js"],
         "matches": ["https://*/browse/*"]
     }],
