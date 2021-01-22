@@ -15,13 +15,13 @@
     },
 
     "background": {
-        "scripts": [ "background.js" ]
+        "scripts": ["background.js"]
     },
 
     "content_scripts": [{
         "css": "content.css",
-        "js": [ "content.js" ],
-        "matches": [ "https://jiracommercial.flir.com/browse/*" ]
+        "js": ["content.js"],
+        "matches": ["https://*/browse/*"]
     }],
 
     "browser_action": {
@@ -34,5 +34,5 @@
         }
     },
 
-    "permissions": [ ]
+    "permissions": []
 }
