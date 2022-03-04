@@ -29,6 +29,38 @@ function addCopyIssueButton() {
     container.insertBefore(createCopyIssueButton(), container.firstChild)
 }
 
+function createCcbButton() {
+    let a = document.createElement('a')
+    a.className = "aui-button toolbar-trigger extesion-copy-button"
+    a.id = "copy-ccb-button"
+    a.innerHTML = `
+    <span>
+        <svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+          <g transform="matrix(0.047619, 0, 0, 0.053489, -8.666582, -6.967489)">
+            <path d="m350 130.26c-17.824 0-34.914 7.0781-47.516 19.68-12.605 12.602-19.684 29.695-19.684 47.52h134.4c0-17.824-7.0781-34.918-19.684-47.52-12.602-12.602-29.691-19.68-47.516-19.68zm151.2 151.2h-50.398v-41.945-1.3438l37.238-37.238c3.9961-4.2891 5.4688-10.352 3.8867-15.992-1.5859-5.6445-5.9961-10.055-11.637-11.637-5.6445-1.5859-11.703-0.11328-15.992 3.8828l-37.238 37.238h-153.89l-37.238-37.238h-0.003906c-4.2891-3.9961-10.352-5.4688-15.992-3.8828-5.6445 1.582-10.055 5.9922-11.637 11.637-1.5859 5.6406-0.11328 11.703 3.8828 15.992l37.016 37.184v1.3438 41.945l-50.398-0.003906c-6.0039 0-11.551 3.2031-14.551 8.4023-3 5.1953-3 11.602 0 16.801 3 5.1953 8.5469 8.3984 14.551 8.3984h50.398c0.023437 12.68 2.457 25.242 7.168 37.016-0.78906 0.4375-1.5352 0.94531-2.2383 1.5117l-47.543 47.543c-3.9961 4.2891-5.4688 10.352-3.8867 15.992 1.5859 5.6445 5.9922 10.055 11.637 11.637 5.6445 1.5859 11.703 0.11328 15.992-3.8828l43.68-43.68c15.289 17.598 36.207 29.355 59.191 33.262v-166.54h33.602v166.54c22.957-3.9062 43.852-15.641 59.137-33.207l43.68 43.68c4.2852 3.9961 10.348 5.4688 15.992 3.8867 5.6406-1.5859 10.051-5.9961 11.637-11.637 1.582-5.6445 0.10938-11.703-3.8867-15.992l-47.543-47.543c-0.70312-0.57031-1.4531-1.0742-2.2422-1.5156 4.7344-11.77 7.1875-24.328 7.2266-37.016h50.398c6.0039 0 11.551-3.1992 14.551-8.3984s3-11.602 0-16.801-8.5469-8.3984-14.551-8.3984z"/>
+          </g>
+        </svg>
+    </span>
+    `;
+
+    a.href = "javascript:void(0);"
+    a.onclick = function() {
+        copyCcbInfoToClipboard()
+    }
+
+    return a
+}
+
+function addCcbButton() {
+    let existingButton = document.getElementById("copy-ccb-button")
+    if (existingButton) {
+        existingButton.parentNode.removeChild(existingButton)
+    }
+
+    let container = document.getElementById("opsbar-jira.issue.tools")
+    container.insertBefore(createCcbButton(), container.firstChild)
+}
+
 function getIssueUrlSummaryText() {
     let issueKeyNode = document.getElementById("key-val")
     let summaryNode = document.getElementById("summary-val")
@@ -42,9 +74,19 @@ function copyIssueToClipboard() {
     navigator.clipboard.writeText(getIssueUrlSummaryText())
 }
 
+function getIssueCcbText() {
+    let priority = document.getElementById("priority-val").innerText
+    let version = document.getElementById("fixfor-val").innerText
+    return `CCB: ${priority}, ${version}`
+}
+
+function copyCcbInfoToClipboard() {
+    navigator.clipboard.writeText(getIssueCcbText())
+}
+
 function addCopyCommandListener() {
     document.addEventListener('copy', function(e) {
-        let selection = window.getSelection().toString()
+        let selection = document.getSelection().toString()
         if (selection.length == 0) {
             copyIssueToClipboard()
             e.preventDefault();
@@ -52,9 +94,21 @@ function addCopyCommandListener() {
     })
 }
 
+function addCutCommandListener() {
+    document.addEventListener('cut', function(e) {
+        let selection = window.getSelection().toString()
+        if (selection.length == 0) {
+            copyCcbInfoToClipboard()
+            e.preventDefault();
+        }
+    })
+}
+
 function main() {
     addCopyIssueButton()
+    addCcbButton()
     addCopyCommandListener()
+    addCutCommandListener()
 }
 
 main()
