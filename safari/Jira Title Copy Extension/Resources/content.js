@@ -111,4 +111,26 @@ function main() {
     addCutCommandListener()
 }
 
-main()
+function waitForElm(selector) {
+    return new Promise(resolve => {
+        if (document.querySelector(selector)) {
+            return resolve(document.querySelector(selector));
+        }
+
+        const observer = new MutationObserver(mutations => {
+            if (document.getElementById(selector)) {
+                resolve(document.getElementById(selector));
+                observer.disconnect();
+            }
+        });
+
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true
+        });
+    });
+}
+
+waitForElm('opsbar-jira.issue.tools').then((elm) => {
+    main()
+});
