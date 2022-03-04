@@ -104,11 +104,12 @@ function addCutCommandListener() {
     })
 }
 
-function main() {
+addCopyCommandListener()
+addCutCommandListener()
+
+function addButtons() {
     addCopyIssueButton()
     addCcbButton()
-    addCopyCommandListener()
-    addCutCommandListener()
 }
 
 function waitForElm(selector) {
@@ -132,5 +133,12 @@ function waitForElm(selector) {
 }
 
 waitForElm('opsbar-jira.issue.tools').then((elm) => {
-    main()
+    addButtons()
 });
+
+new MutationObserver(function(mutations) {
+    addButtons()
+}).observe(
+    document.querySelector('title'),
+    { subtree: true, characterData: true, childList: true }
+);
