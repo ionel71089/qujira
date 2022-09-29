@@ -142,3 +142,113 @@ new MutationObserver(function(mutations) {
     document.querySelector('title'),
     { subtree: true, characterData: true, childList: true }
 );
+
+function createDailyTimer() {
+    let div = document.createElement('div')
+    div.className = 'timer-container'
+    div.id = 'timer-container'
+    div.innerHTML = `
+    <div class="timerDisplay">
+        00 : 00 : 00 : 000
+    </div>
+    <div class="timer-buttons">
+        <button id="pauseTimer">Pause</button>
+        <button id="startTimer">Start</button>
+        <button id="resetTimer">Reset</button>
+    </div>
+    `
+    return div
+}
+
+let [milliseconds,seconds,minutes,hours] = [0,0,0,0];
+let int = null;
+let timerRef = null;
+
+function addDailyTimer() {
+    let existingTimer = document.getElementById('timer-container')
+    if (existingTimer) {
+        existingTimer.parentNode.removeChild(existingTimer)
+    }
+
+    let pageDiv = document.getElementById('page')
+    let timer = createDailyTimer()
+    pageDiv.appendChild(timer)
+
+    timerRef = document.querySelector('.timerDisplay');
+
+    document.getElementById('startTimer').addEventListener('click', ()=>{
+        startTimer()
+    });
+    
+    document.getElementById('pauseTimer').addEventListener('click', ()=>{
+        pauseTimer()
+    });
+    
+    document.getElementById('resetTimer').addEventListener('click', ()=>{
+        resetTimer()
+    });
+
+    document.addEventListener("visibilitychange", function() {
+        if (document.visibilityState === 'visible') {
+            // startTimer()
+        } else {
+            pauseTimer()
+        }
+    });
+
+    startTimer()
+}
+
+function pauseTimer() {
+    clearInterval(int);
+}
+
+function resetTimer() {
+    clearInterval(int);
+    [milliseconds,seconds,minutes,hours] = [0,0,0,0];
+    timerRef.innerHTML = '00 : 00 : 00 : 000 ';
+}
+
+function startTimer() {
+    if(int!==null) {
+        clearInterval(int);
+    }
+    int = setInterval(displayTimer,10);
+}
+
+function displayTimer() {
+    milliseconds+=10;
+    if(milliseconds == 1000) {
+        milliseconds = 0;
+        seconds++;
+        if(seconds == 60){
+            seconds = 0;
+            minutes++;
+            if(minutes == 60) {
+                minutes = 0;
+                hours++;
+            }
+        }
+    }
+    let h = hours < 10 ? "0" + hours : hours;
+    let m = minutes < 10 ? "0" + minutes : minutes;
+    let s = seconds < 10 ? "0" + seconds : seconds;
+    let ms = milliseconds < 10 ? "00" + milliseconds : milliseconds < 100 ? "0" + milliseconds : milliseconds;
+
+    timerRef.innerHTML = ` ${h} : ${m} : ${s} : ${ms}`;
+}
+
+function shouldAddTimer() {
+    let url = window.location.href
+    if (url.includes('/secure/RapidBoard.jspa?rapidView=') && url.includes('quickFilter=')) {
+        return true
+    }
+    return false
+}
+
+waitForElm('page').then((elm) => {
+    if (shouldAddTimer()) {
+        addDailyTimer()
+    }    
+});
+

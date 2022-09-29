@@ -93,6 +93,7 @@
 		52ACB9D425652FD900B28166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52ACB9D525652FD900B28166 /* Jira_Title_Copy_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Jira_Title_Copy_Extension.entitlements; sourceTree = "<group>"; };
 		52E8A4B925B3292F00AA0A60 /* content.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = content.css; sourceTree = "<group>"; };
+		C5B7E22D28ACDE3B0013158C /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +161,7 @@
 				52ACB99A25652FD700B28166 /* ViewController.swift */,
 				52ACB99C25652FD900B28166 /* Assets.xcassets */,
 				52ACB99E25652FD900B28166 /* Info.plist */,
+				C5B7E22D28ACDE3B0013158C /* Config.xcconfig */,
 			);
 			path = "Jira Title Copy";
 			sourceTree = "<group>";
@@ -448,6 +450,7 @@
 /* Begin XCBuildConfiguration section */
 		52ACB9D625652FD900B28166 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5B7E22D28ACDE3B0013158C /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -509,6 +512,7 @@
 		};
 		52ACB9D725652FD900B28166 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5B7E22D28ACDE3B0013158C /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

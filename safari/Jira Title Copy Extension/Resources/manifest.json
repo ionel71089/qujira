@@ -21,7 +21,10 @@
     "content_scripts": [{
         "css": ["content.css"],
         "js": ["content.js"],
-        "matches": ["https://*/browse/*"]
+        "matches": [
+            "https://*/browse/*",
+            "https://*/secure/RapidBoard.jspa"
+        ]
     }],
 
     "browser_action": {
